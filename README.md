@@ -1,3 +1,5 @@
+Work in progress
+
 Records x seconds worth of audio. After it then transcribes the audio file to text and translates the transcription generated.
 
 Currently to get working, replace 'targetLanguage' to source language, 'languageCode' to destination.
