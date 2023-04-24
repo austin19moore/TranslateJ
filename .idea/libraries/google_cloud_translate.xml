@@ -1,0 +1,67 @@
+<component name="libraryTable">
+  <library name="google.cloud.translate" type="repository">
+    <properties maven-id="com.google.cloud:google-cloud-translate:0.3.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/cloud/google-cloud-translate/0.3.0/google-cloud-translate-0.3.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/cloud/google-cloud-core/0.3.0/google-cloud-core-0.3.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/auth/google-auth-library-credentials/0.3.1/google-auth-library-credentials-0.3.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/auth/google-auth-library-oauth2-http/0.3.1/google-auth-library-oauth2-http-0.3.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/http-client/google-http-client-jackson2/1.19.0/google-http-client-jackson2-1.19.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.1.3/jackson-core-2.1.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/http-client/google-http-client/1.21.0/google-http-client-1.21.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.3/commons-codec-1.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/oauth-client/google-oauth-client/1.21.0/google-oauth-client-1.21.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/19.0/guava-19.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/api-client/google-api-client-appengine/1.21.0/google-api-client-appengine-1.21.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/oauth-client/google-oauth-client-appengine/1.21.0/google-oauth-client-appengine-1.21.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/oauth-client/google-oauth-client-servlet/1.21.0/google-oauth-client-servlet-1.21.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/http-client/google-http-client-jdo/1.21.0/google-http-client-jdo-1.21.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/api-client/google-api-client/1.21.0/google-api-client-1.21.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/api-client/google-api-client-servlet/1.21.0/google-api-client-servlet-1.21.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/jdo/jdo2-api/2.3-eb/jdo2-api-2.3-eb.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/transaction-api/1.1/transaction-api-1.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/http-client/google-http-client-appengine/1.21.0/google-http-client-appengine-1.21.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/http-client/google-http-client-jackson/1.21.0/google-http-client-jackson-1.21.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.9.2/joda-time-2.9.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/json/json/20151123/json-20151123.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/3.0.0-beta-3/protobuf-java-3.0.0-beta-3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/api/gax/0.0.16/gax-0.0.16.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-all/0.15.0/grpc-all-0.15.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-auth/0.15.0/grpc-auth-0.15.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-netty/0.15.0/grpc-netty-0.15.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec-http2/4.1.1.Final/netty-codec-http2-4.1.1.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec-http/4.1.1.Final/netty-codec-http-4.1.1.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec/4.1.1.Final/netty-codec-4.1.1.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-handler/4.1.1.Final/netty-handler-4.1.1.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-buffer/4.1.1.Final/netty-buffer-4.1.1.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-common/4.1.1.Final/netty-common-4.1.1.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.1.Final/netty-transport-4.1.1.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-resolver/4.1.1.Final/netty-resolver-4.1.1.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-okhttp/0.15.0/grpc-okhttp-0.15.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/okio/okio/1.6.0/okio-1.6.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp/okhttp/2.5.0/okhttp-2.5.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-protobuf-nano/0.15.0/grpc-protobuf-nano-0.15.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/protobuf/nano/protobuf-javanano/3.0.0-alpha-5/protobuf-javanano-3.0.0-alpha-5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-stub/0.15.0/grpc-stub-0.15.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-protobuf/0.15.0/grpc-protobuf-0.15.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java-util/3.0.0-beta-3/protobuf-java-util-3.0.0-beta-3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.3/gson-2.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-protobuf-lite/0.15.0/grpc-protobuf-lite-0.15.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-core/0.15.0/grpc-core-0.15.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/auto/value/auto-value/1.1/auto-value-1.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/inject/guice/4.0/guice-4.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/api/grpc/grpc-google-common-protos/0.0.7/grpc-google-common-protos-0.0.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/apis/google-api-services-translate/v2-rev47-1.22.0/google-api-services-translate-v2-rev47-1.22.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

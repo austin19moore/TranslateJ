@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.MainController">
+   <children>
+      <TextArea fx:id="transcriptionArea" editable="false" layoutX="35.0" layoutY="27.0" prefHeight="300.0" prefWidth="308.0" promptText="Transcription text" style="-fx-background-color: #808080;" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="startButton" layoutX="380.0" layoutY="344.0" mnemonicParsing="false" onAction="#startButton" style="-fx-background-color: #000000;" text="Start" textFill="WHITE" />
+      <TextArea fx:id="translationArea" editable="false" layoutX="459.0" layoutY="27.0" prefHeight="300.0" prefWidth="308.0" promptText="Transcription text" style="-fx-background-color: #808080;" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+      <Text layoutX="124.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transcription:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="560.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Translation">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="settingsButton" layoutX="716.0" layoutY="344.0" mnemonicParsing="false" onAction="#settingsButton" style="-fx-background-color: #000000;" text="Settings" textFill="WHITE" />
+   </children>
+</AnchorPane>
