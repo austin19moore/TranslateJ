@@ -1,3 +1,4 @@
+(Work in progress)
 Records x seconds worth of audio. After it then transcribes the audio file to text and translates the transcription generated.
 
 ![image](https://user-images.githubusercontent.com/80301847/234136479-efd3c9c0-f602-4495-9dec-5977dad857ba.png)
