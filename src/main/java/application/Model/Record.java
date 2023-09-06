@@ -1,5 +1,7 @@
 package application.Model;
 
+import application.Controller.MainController;
+
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
@@ -48,9 +50,9 @@ public class Record {
         targetLine.stop();
         targetLine.close();
 
-    } catch (LineUnavailableException e) {
-        e.printStackTrace();
     } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (LineUnavailableException e) {
             e.printStackTrace();
         }
 

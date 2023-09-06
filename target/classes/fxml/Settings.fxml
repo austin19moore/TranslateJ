@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.SettingsController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.SettingsController">
    <children>
-      <ListView fx:id="audioOptions" layoutX="586.0" layoutY="33.0" onMouseClicked="#audioListViewClick" prefHeight="359.0" prefWidth="200.0" />
-      <Text layoutX="634.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Audio Sources:">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Text>
-      <Button fx:id="backButton" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: #000000;" text="Back" textFill="WHITE" />
+      <Text layoutX="375.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="projectID" />
+      <Text layoutX="354.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Target Language" />
+      <TextField fx:id="projectIDField" layoutX="325.0" layoutY="133.0" onAction="#projectIDEnter" />
+      <TextField fx:id="sourceField" layoutX="324.0" layoutY="209.0" onAction="#sourceEnter" />
+      <TextField fx:id="targetField" layoutX="324.0" layoutY="286.0" onAction="#targetEnter" />
+      <Text layoutX="353.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Source Language" />
+      <Button fx:id="backButton" layoutX="734.0" layoutY="349.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: #000000;" text="Back" textFill="WHITE" />
    </children>
 </AnchorPane>
