@@ -1,9 +1,9 @@
-(Work in progress) transcribe/translate currently work, record function is partially broken (only works when selecting your default microphone)
 Records x seconds worth of audio. After it then transcribes the audio file to text and translates the transcription generated.
 
-![image](https://user-images.githubusercontent.com/80301847/234136479-efd3c9c0-f602-4495-9dec-5977dad857ba.png)
-![image](https://user-images.githubusercontent.com/80301847/234137042-957caeb3-6c8a-4492-943e-435da321daa5.png)
+![image](https://github.com/austin19moore/TranslateJ/assets/80301847/0d9b00c7-1827-4d78-9eeb-541257027995)
+
+![image](https://github.com/austin19moore/TranslateJ/assets/80301847/06874e48-af67-4ee3-a2da-c5c285a7bcc3)
 
 
-Currently to get working, replace 'targetLanguage' to source language, 'languageCode' to destination.
+
 Set 'GOOGLE_APPLICATION_CREDENTIALS=' in your IDE run config to location of your service key (C:\Users\...x.json)
