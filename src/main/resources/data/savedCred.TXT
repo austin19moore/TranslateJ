@@ -1,4 +1,4 @@
-jp-en-346011
+projectID
 aaa
 JA
 en-US
