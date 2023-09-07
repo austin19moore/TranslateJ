@@ -45,17 +45,18 @@ public class Record {
         // starts recording for 10 seconds
         System.out.println("Starting recording...");
         audioRecorderThread.start();
-        sleep(10000);
-        System.out.println("Stopping recording...");
-        targetLine.stop();
-        targetLine.close();
 
-    } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (LineUnavailableException e) {
+
+    } catch (LineUnavailableException e) {
             e.printStackTrace();
         }
 
+    }
+
+    public static void stop(TargetDataLine targetLine) {
+        targetLine.stop();
+        targetLine.close();
+        System.out.println("Stopping recording");
     }
 
 

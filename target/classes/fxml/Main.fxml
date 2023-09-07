@@ -14,8 +14,8 @@
             <Font size="16.0" />
          </font>
       </TextArea>
-      <Button fx:id="startButton" layoutX="380.0" layoutY="344.0" mnemonicParsing="false" onAction="#startButton" style="-fx-background-color: #000000;" text="Start" textFill="WHITE" />
-      <TextArea fx:id="translationArea" editable="false" layoutX="459.0" layoutY="27.0" prefHeight="300.0" prefWidth="308.0" promptText="Translation text" style="-fx-background-color: #808080;" wrapText="true">
+      <Button fx:id="startButton" layoutX="343.0" layoutY="315.0" mnemonicParsing="false" onAction="#startButton" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #000000;" text="start" textFill="WHITE" />
+      <TextArea fx:id="translationArea" editable="false" layoutX="459.0" layoutY="27.0" prefHeight="300.0" prefWidth="308.0" promptText="Transcription text" style="-fx-background-color: #808080;" wrapText="true">
          <font>
             <Font size="16.0" />
          </font>
@@ -31,7 +31,8 @@
          </font>
       </Text>
       <Button fx:id="swapButton" layoutX="35.0" layoutY="344.0" mnemonicParsing="false" onAction="#swapButton" style="-fx-background-color: #000000;" text="swap" textFill="WHITE" />
-      <Text fx:id="currentAudioSource" layoutX="97.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current: Default Mic" />
-      <Button fx:id="settingsButton" layoutX="709.0" layoutY="344.0" mnemonicParsing="false" onAction="#settingsButton" style="-fx-background-color: #000000;" text="settings" textFill="WHITE" />
+      <Text fx:id="currentAudioSource" layoutX="94.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current: Defualt Mic" />
+      <Button fx:id="cancelButton" layoutX="343.0" layoutY="352.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #000000;" text="cancel" textFill="WHITE" />
+      <Button fx:id="settingsButton" layoutX="716.0" layoutY="344.0" mnemonicParsing="false" onAction="#settingsButton" style="-fx-background-color: #000000;" text="settings" textFill="WHITE" />
    </children>
 </AnchorPane>

@@ -20,6 +20,9 @@ public class SettingsController implements Initializable {
     javafx.scene.control.TextField projectIDField;
 
     @FXML
+    javafx.scene.control.TextField deeplKeyField;
+
+    @FXML
     javafx.scene.control.TextField sourceField;
 
     @FXML
@@ -28,6 +31,7 @@ public class SettingsController implements Initializable {
     private static String tLanguage;
     private static String sLanguage;
     private static String projectID;
+    private static String authKey = "bc532c7c-dcda-6754-3458-3758bdf0ede6:fx";
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -39,6 +43,7 @@ public class SettingsController implements Initializable {
         }
 
         projectIDField.setText(getProjectID());
+        deeplKeyField.setText(getAuthKey());
         targetField.setText(getTargetLanguage());
         sourceField.setText(getSourceLanguage());
 
@@ -70,6 +75,7 @@ public class SettingsController implements Initializable {
         } else {
 
             setProjectID(scan.nextLine());
+            setAuthKey(scan.nextLine());
             setSourceLanguage(scan.nextLine());
             setTargetLanguage(scan.nextLine());
 
@@ -91,8 +97,14 @@ public class SettingsController implements Initializable {
             System.out.println("project id NULL");
             bw.write("NULL");
         } else {
-            System.out.println("project id + " + getProjectID());
+            // System.out.println("project id " + getProjectID());
             bw.write(getProjectID());
+        }
+        bw.newLine();
+        if (getAuthKey() == null || getAuthKey().isEmpty()) {
+            bw.write("null");
+        } else {
+            bw.write(getAuthKey());
         }
         bw.newLine();
         if (getSourceLanguage() == null || getTargetLanguage().isEmpty()) {
@@ -132,6 +144,12 @@ public class SettingsController implements Initializable {
 
     }
 
+    public void deeplKeyEnter() throws IOException {
+        System.out.println("Setting auth key: " + targetField.getText());
+        setAuthKey(deeplKeyField.getText());
+        writeSettings();
+    }
+
     public static void setProjectID(String ID) {
         projectID = ID;
     }
@@ -154,6 +172,14 @@ public class SettingsController implements Initializable {
 
     public static String getSourceLanguage() {
         return sLanguage;
+    }
+
+    public static void setAuthKey(String key) {
+        authKey = key;
+    }
+
+    public static String getAuthKey() {
+        return authKey;
     }
 
 }

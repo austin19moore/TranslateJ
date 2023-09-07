@@ -7,15 +7,18 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.SettingsController">
    <children>
-      <ListView fx:id="audioOptions" layoutX="586.0" layoutY="33.0" onMouseClicked="#audioListViewClick" prefHeight="359.0" prefWidth="200.0" />
-      <Text layoutX="634.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Audio Sources:">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Text>
-      <Button fx:id="backButton" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: #000000;" text="Back" textFill="WHITE" />
+      <TextField fx:id="deeplKeyField" layoutX="326.0" layoutY="142.0" onAction="#deeplKeyEnter" />
+      <TextField fx:id="sourceField" layoutX="326.0" layoutY="227.0" onAction="#sourceEnter" />
+      <TextField fx:id="projectIDField" layoutX="326.0" layoutY="69.0" onAction="#projectIDEnter" />
+      <TextField fx:id="targetField" layoutX="326.0" layoutY="298.0" onAction="#targetEnter" />
+      <Text layoutX="375.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ProjectID" />
+      <Text layoutX="357.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DeepL Auth Key" />
+      <Text layoutX="354.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Source Language" />
+      <Text layoutX="355.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Target Language" />
+      <Button fx:id="backButton" layoutX="712.0" layoutY="345.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: #000000;" text="back" textFill="WHITE" />
+      <Text layoutX="487.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GCLOUD language code" wrappingWidth="89.109375" />
+      <Text layoutX="487.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DEEPL language code" wrappingWidth="84.673828125" />
    </children>
 </AnchorPane>

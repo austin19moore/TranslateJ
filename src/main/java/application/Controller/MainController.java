@@ -4,8 +4,9 @@ package application.Controller;
 
 import application.Main;
 import application.Model.Record;
-import application.Model.Translate;
 import application.Model.syncSpeech;
+import com.deepl.api.TextResult;
+import com.deepl.api.Translator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -32,10 +33,15 @@ public class MainController implements Initializable {
     Button startButton;
 
     @FXML
+    Button cancelButton;
+
+    @FXML
     Text currentAudioSource;
 
     private static TargetDataLine targetLine;
     private static Mixer mixer;
+    private static boolean recording = false;
+    private Record recAudio;
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
@@ -55,24 +61,50 @@ public class MainController implements Initializable {
 
     public void startButton(ActionEvent arg0) throws Exception {
 
-        transcriptionArea.setText("おはようございます");
-        System.out.println("Starting record...");
-        startButton.setText("Recording...");
-        Record recAudio = new Record();
-        Record.getAudio(targetLine);
+        recAudio = new Record();
+        //cancelButton.setVisible(true);
+        cancelButton.setDisable(false);
+
+        if (recording) {
+            recAudio.stop(targetLine);
+            startButton.setText("Stop");
+
+            System.out.println("Starting transcription...");
+            application.Model.syncSpeech syncT = new syncSpeech();
+            String transcription = syncT.transcribe("src/main/resources/audio/recording.wav", SettingsController.getSourceLanguage());
+            // String transcription = "ただ様で始める前にさちょっとね昨日ね愛おしいねファミリーベッド混じる小学校のジル君の写真をねあの送ってねやつぶやいたのみんなに見てもらいたくてつぶやいたらさ";
+
+            System.out.println("Starting translation...");
+            String translation = deeplTranslate(transcription);
+
+            transcriptionArea.setText(transcription);
+            translationArea.setText(translation);
+            startButton.setText("Start");
+            System.out.println("done");
+
+        } else {
+            recording = true;
+            Record.getAudio(targetLine);
+            System.out.println("Starting record...");
+            startButton.setText("Stop");
+        }
+
+    }
+
+    public String deeplTranslate(String transcription) throws Exception {
+        Translator translator = new Translator(SettingsController.getAuthKey());
+        TextResult result = translator.translateText(transcription, SettingsController.getSourceLanguage(), SettingsController.getTargetLanguage());
+        System.out.println("translation: " + result.getText());
+        return result.getText();
+
+    }
+
+    public void cancelButton(ActionEvent arg0) {
+
+        recAudio.stop(targetLine);
+        recording = false;
         startButton.setText("Start");
-
-        System.out.println("Starting transcription...");
-        //syncSpeech syncT = new syncSpeech();
-        //String transcription = syncT.transcribe("src/main/resources/audio/recording.wav", SettingsController.getSourceLanguage());
-
-
-        System.out.println("Starting translation...");
-        Translate t = new Translate();
-        String translation = t.translate(SettingsController.getProjectID(), SettingsController.getTargetLanguage(), "おはようございます");
-
-        //transcriptionArea.setText(transcription);
-        translationArea.setText(translation);
+        cancelButton.setDisable(true);
 
     }
 

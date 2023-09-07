@@ -27,7 +27,7 @@ public class syncSpeech {
             RecognitionConfig config =
                     RecognitionConfig.newBuilder()
                             .setEncoding(RecognitionConfig.AudioEncoding.LINEAR16)
-                            .setSampleRateHertz(44100)
+                            .setSampleRateHertz(48000)
                             .setLanguageCode(sLanguage)
                             .setAudioChannelCount(2)
                             .build();

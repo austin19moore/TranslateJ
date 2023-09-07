@@ -1,3 +1,4 @@
-null
-en-US
+jp-en-346011
+bc532c7c-dcda-6754-3458-3758bdf0ede6:fx
+JA
 en-US
