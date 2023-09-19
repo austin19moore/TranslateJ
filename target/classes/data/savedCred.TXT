@@ -1,4 +1,4 @@
 projectID
-aaa
+deeplAPIkey
 JA
 en-US

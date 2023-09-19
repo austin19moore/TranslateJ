@@ -7,7 +7,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.SettingsController">
    <children>
       <TextField fx:id="deeplKeyField" layoutX="326.0" layoutY="142.0" onAction="#deeplKeyEnter" />
@@ -19,5 +18,7 @@
       <Text layoutX="354.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Source Language" />
       <Text layoutX="355.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Target Language" />
       <Button fx:id="backButton" layoutX="712.0" layoutY="345.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: #000000;" text="back" textFill="WHITE" />
+      <Text layoutX="487.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GCLOUD language code" wrappingWidth="89.109375" />
+      <Text layoutX="487.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DEEPL language code" wrappingWidth="84.673828125" />
    </children>
 </AnchorPane>

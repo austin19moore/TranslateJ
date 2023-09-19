@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.MainController">
    <children>
-      <TextArea fx:id="transcriptionArea" editable="false" layoutX="35.0" layoutY="27.0" prefHeight="300.0" prefWidth="308.0" promptText="Transcription text" style="-fx-background-color: #808080;" wrapText="true">
+      <TextArea fx:id="transcriptionArea" layoutX="35.0" layoutY="27.0" prefHeight="300.0" prefWidth="308.0" promptText="Transcription text" style="-fx-background-color: #808080;" wrapText="true">
          <font>
             <Font size="16.0" />
          </font>
