@@ -31,7 +31,7 @@ public class SettingsController implements Initializable {
     private static String tLanguage;
     private static String sLanguage;
     private static String projectID;
-    private static String authKey = "bc532c7c-dcda-6754-3458-3758bdf0ede6:fx";
+    private static String authKey;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
